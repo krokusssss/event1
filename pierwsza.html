@@ -1,27 +1,28 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wpisz Hasło</title>
-   <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <div class="container">
         <h1>Podaj Hasło</h1>
         <input type="password" id="password" placeholder="Wpisz hasło">
-        <br>
+        <br />
         <button onclick="checkPassword()">OK</button>
     </div>
 
     <script>
         function checkPassword() {
-            const correctPassword = "gatling";  // Zastąp "tajnehaslo" swoim prawidłowym hasłem
+            const correctPassword = "gatling";  // Poprawne hasło
             const inputPassword = document.getElementById('password').value;
 
             if (inputPassword === correctPassword) {
                 window.location.href = "druga.html";  // Przekierowanie do innej strony
-            } else {
+            } 
+            else {
                 alert("Nieprawidłowe hasło, spróbuj ponownie.");
             }
         }
